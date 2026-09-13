@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'dart:ui';
 
 import '../routes/side_navigation_bar.dart';
-import '../widgets/kavach_logo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -115,13 +114,6 @@ class TopNavBar extends StatelessWidget {
         children: [
           Row(
             children: [
-              const KavachLogo(size: 44, padding: EdgeInsets.zero),
-              Container(
-                width: 1,
-                height: 16,
-                color: AppColors.outlineVariant,
-                margin: const EdgeInsets.symmetric(horizontal: 12),
-              ),
               Row(
                 children: [
                   Container(
