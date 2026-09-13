@@ -1,4 +1,5 @@
-# 🛡️ IBVAP --- Intelligent Border Video Analytics Platform
+# 🛡️ KAVACH
+#     IBVAP --- Intelligent Border Video Analytics Platform
 
 > **Kavach: Transforming existing CCTV infrastructure into an AI-powered
 > border intelligence network.**
