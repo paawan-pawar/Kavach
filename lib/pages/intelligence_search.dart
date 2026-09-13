@@ -600,16 +600,7 @@ class TopNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            children: [
-              IconButton(
-                icon: const Icon(Icons.menu, color: AppColors.onSurface),
-                onPressed: () {},
-                padding: EdgeInsets.zero,
-                constraints: const BoxConstraints(),
-              ),
-            ],
-          ),
+          const SizedBox.shrink(),
           Row(
             children: [
               Container(

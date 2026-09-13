@@ -1637,6 +1637,19 @@ class TopNavBar extends StatelessWidget {
           ),
           Row(
             children: [
+              Container(
+                width: 32,
+                height: 32,
+                decoration: BoxDecoration(
+                  color: AppColors.primary,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: const Icon(
+                  Icons.person,
+                  size: 18,
+                  color: AppColors.onPrimary,
+                ),
+              ),
             ],
           ),
         ],
