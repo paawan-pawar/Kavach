@@ -1,0 +1,18 @@
+# Vercel ignore file - these files will be ignored during build
+# Do NOT ignore the build folder as we need it for deployment
+.git
+.gitignore
+.idea
+.vscode
+.metadata
+ios/
+android/
+linux/
+macos/
+windows/
+test/
+.dart_tool/
+.pub-cache/
+pubspec.lock
+.DS_Store
+*.iml
