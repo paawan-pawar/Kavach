@@ -786,13 +786,8 @@ Add your project's selected open-source or proprietary license here.
 
 ------------------------------------------------------------------------
 
-```{=html}
-<p align="center">
-```
 ### 🛡️ IBVAP --- KAVACH
 
 **From Surveillance to Intelligence.**
 
-```{=html}
-</p>
-```
+
