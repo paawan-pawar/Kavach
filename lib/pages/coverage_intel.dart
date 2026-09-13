@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'dart:ui';
 
 import '../routes/side_navigation_bar.dart' as navigation;
+import '../widgets/kavach_logo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -109,15 +110,7 @@ class TopNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Text(
-            'IBVAP',
-            style: TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.w700,
-              color: AppColors.primaryFixedDim,
-              letterSpacing: -0.02,
-            ),
-          ),
+          const KavachLogo(size: 44, padding: EdgeInsets.zero),
           Row(
             children: [
               IconButton(

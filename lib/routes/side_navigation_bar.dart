@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'app_routes.dart';
 import 'app_router.dart';
+import '../widgets/kavach_logo.dart';
 
 class AppSideNavigationBar extends StatelessWidget {
   const AppSideNavigationBar({super.key});
@@ -31,19 +32,7 @@ class AppSideNavigationBar extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
             child: Row(
               children: [
-                Container(
-                  width: 32,
-                  height: 32,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFF31353F),
-                    borderRadius: BorderRadius.circular(4),
-                  ),
-                  child: const Icon(
-                    Icons.security,
-                    color: Color(0xFF00DAF3),
-                    size: 20,
-                  ),
-                ),
+                const KavachLogo(size: 40, padding: EdgeInsets.zero),
                 const SizedBox(width: 12),
                 const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

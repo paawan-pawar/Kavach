@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'dart:ui';
 
 import '../routes/side_navigation_bar.dart' as navigation;
+import '../widgets/kavach_logo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -861,29 +862,7 @@ class SideNavBar extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
-                Container(
-                  width: 32,
-                  height: 32,
-                  decoration: BoxDecoration(
-                    color: AppColors.primaryContainer,
-                    borderRadius: BorderRadius.circular(4),
-                  ),
-                  child: const Icon(
-                    Icons.security,
-                    size: 20,
-                    color: AppColors.onPrimaryContainer,
-                  ),
-                ),
-                const SizedBox(width: 12),
-                const Text(
-                  'IBVAP',
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    color: AppColors.primary,
-                    letterSpacing: 0.5,
-                  ),
-                ),
+                const KavachLogo(size: 48, padding: EdgeInsets.zero),
               ],
             ),
           ),
