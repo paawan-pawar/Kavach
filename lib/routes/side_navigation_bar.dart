@@ -32,6 +32,13 @@ class AppSideNavigationBar extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
             child: Row(
               children: [
+                IconButton(
+                  icon: const Icon(Icons.menu, color: Color(0xFFDFE2EF)),
+                  onPressed: () {},
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(),
+                ),
+                const SizedBox(width: 12),
                 const KavachLogo(size: 40, padding: EdgeInsets.zero),
                 const SizedBox(width: 12),
                 const Column(

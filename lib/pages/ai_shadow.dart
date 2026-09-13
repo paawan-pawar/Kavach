@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'dart:ui';
 
 import '../routes/side_navigation_bar.dart' as navigation;
+import '../widgets/kavach_logo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -145,21 +146,6 @@ class TopNavBar extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 constraints: const BoxConstraints(),
               ),
-              const SizedBox(width: 16),
-              Container(
-                width: 32,
-                height: 32,
-                decoration: BoxDecoration(
-                  color: AppColors.surfaceContainerHigh,
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: AppColors.outlineVariant),
-                ),
-                child: const Icon(
-                  Icons.person,
-                  color: AppColors.onSurfaceVariant,
-                  size: 16,
-                ),
-              ),
             ],
           ),
         ],
@@ -184,20 +170,14 @@ class SideNavBar extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
             child: Row(
               children: [
-                Container(
-                  width: 40,
-                  height: 40,
-                  decoration: BoxDecoration(
-                    color: AppColors.surfaceContainerHighest,
-                    borderRadius: BorderRadius.circular(4),
-                    border: Border.all(color: AppColors.outlineVariant),
-                  ),
-                  child: const Icon(
-                    Icons.admin_panel_settings,
-                    color: AppColors.primaryFixedDim,
-                    size: 24,
-                  ),
+                IconButton(
+                  icon: const Icon(Icons.menu, color: AppColors.onSurface),
+                  onPressed: () {},
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(),
                 ),
+                const SizedBox(width: 12),
+                const KavachLogo(size: 40, padding: EdgeInsets.zero),
                 const SizedBox(width: 12),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

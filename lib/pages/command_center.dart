@@ -153,24 +153,6 @@ class TopNavBar extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 constraints: const BoxConstraints(),
               ),
-              const SizedBox(width: 16),
-              Container(
-                width: 32,
-                height: 32,
-                decoration: BoxDecoration(
-                  color: AppColors.surfaceVariant,
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: AppColors.outlineVariant),
-                ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(16),
-                  child: Image.network(
-                    'https://lh3.googleusercontent.com/aida-public/AB6AXuCpt8yDtS28BHlx7d2PzHiEEe2kJ2PRzTTJXMkxWmUciIj0RNlghEFDGmOhQCMDHgii9bkd3JUJoB-77TNXqsSNP2sOqMfTQFJn_Pw_leFLJw9SJKYQ-zX8OvQYySVAl6EPXqHq3Mp41AZbCtN0QCHpCdsfHZHQXK8hr_RWWUBYqqqtMCee99c15mV_ISi0GfmhI5i_ncA3XwUN9ToD7xz52vqntlbgN1eRtfktzmyj5GwsvULmpjUt',
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => const Icon(Icons.person, color: AppColors.onSurfaceVariant),
-                  ),
-                ),
-              ),
             ],
           ),
         ],

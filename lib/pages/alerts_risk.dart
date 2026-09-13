@@ -862,6 +862,13 @@ class SideNavBar extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
+                IconButton(
+                  icon: const Icon(Icons.menu, color: AppColors.onSurface),
+                  onPressed: () {},
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(),
+                ),
+                const SizedBox(width: 12),
                 const KavachLogo(size: 48, padding: EdgeInsets.zero),
               ],
             ),
@@ -1004,19 +1011,6 @@ class TopNavBar extends StatelessWidget {
           ),
           Row(
             children: [
-              Container(
-                width: 32,
-                height: 32,
-                decoration: BoxDecoration(
-                  color: AppColors.primaryContainer,
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: const Icon(
-                  Icons.person,
-                  size: 18,
-                  color: AppColors.onPrimary,
-                ),
-              ),
             ],
           ),
         ],

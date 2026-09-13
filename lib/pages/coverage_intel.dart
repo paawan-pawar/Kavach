@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'dart:ui';
 
 import '../routes/side_navigation_bar.dart' as navigation;
+import '../widgets/kavach_logo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -125,23 +126,6 @@ class TopNavBar extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 constraints: const BoxConstraints(),
               ),
-              const SizedBox(width: 8),
-              Container(
-                width: 32,
-                height: 32,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: AppColors.outlineVariant),
-                ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(16),
-                  child: Image.network(
-                    'https://lh3.googleusercontent.com/aida-public/AB6AXuA8-4A5Urh1N-cesszSCQcl3Ef42qE4UTPaUMY07m7TGxXNz6lKAAE1BQIKLNUTBpKACTCYxpf1aiLcwWtS6gZ7z27_16gQ5C793i7sTkEMvpu_SYb2orFlp91VxZsEQMZ7ct6Uh13pf-1l_KQm5KFqaqVZyMJ_FWQl0tjRWCtQKuD9DctR1yxEhNhQuL-h9IPQBpwSTnA124sdbPJ0OqbxE9t_uyJb0fuAKzl1l5iutoepT8Es0DWa',
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => Container(color: Colors.grey[800]),
-                  ),
-                ),
-              ),
             ],
           ),
         ],
@@ -166,22 +150,14 @@ class SideNavBar extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: Row(
               children: [
-                Container(
-                  width: 40,
-                  height: 40,
-                  decoration: BoxDecoration(
-                    color: AppColors.surfaceContainer,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8),
-                    child: Image.network(
-                      'https://lh3.googleusercontent.com/aida-public/AB6AXuCVUFMa07S_aPzLAHSOOu2JJcKgOzuCISsZHXWHQ_QWVfOZ0wpzf-kR6jeV3oAO3uw6c_SYe_gU4exN1Wz-Brchxgw_IYNqMj7qZueYXEk76o6nPMCnIJqF9G5k3sR0VknpID8IznrdkH8-FrVFon7mhYdV-ldrK_dpgQwB7YWj6gPPEFZtVtqGI7R1VsBQAHqU6rWa5pIKPl8Nlu6hL433x4eWT4LlHXHlVDghAfVkNBwynzqJIAQf',
-                      fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => const Icon(Icons.shield, color: AppColors.primaryFixedDim),
-                    ),
-                  ),
+                IconButton(
+                  icon: const Icon(Icons.menu, color: AppColors.onSurface),
+                  onPressed: () {},
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(),
                 ),
+                const SizedBox(width: 12),
+                const KavachLogo(size: 40, padding: EdgeInsets.zero),
                 const SizedBox(width: 12),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
