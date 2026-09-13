@@ -1,5 +1,5 @@
 # Vercel ignore file - these files will be ignored during build
-# Do NOT ignore the build folder as we need it for deployment
+# Do NOT ignore the build folder as it is needed for deployment
 .git
 .gitignore
 .idea
